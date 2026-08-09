@@ -520,4 +520,4 @@ function escapeHTML(value) {
     } catch (error) {
         console.error(error);
     }
-})();
+})
