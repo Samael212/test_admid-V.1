@@ -1,6 +1,7 @@
 {
   "name": "maverick-black-duty-system",
   "version": "1.0.0",
+  "description": "Maverick Black Duty System",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
