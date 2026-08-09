@@ -6,7 +6,8 @@
 
     <title>MAVERICK BLACK</title>
 
-    <link rel="stylesheet" href="/css/style.css">
+    <!-- ใช้ relative path -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -17,22 +18,20 @@
     </div>
 
     <div class="nav-right">
-
         <a
             id="discordLogin"
             class="discord-btn"
-            href="http://localhost:3000/auth/discord"
+            href="/auth/discord"
         >
             LOGIN WITH DISCORD
         </a>
 
         <div id="userBox" class="user-box hidden">
-
             <img
                 id="userAvatar"
                 class="user-avatar"
                 src=""
-                alt=""
+                alt="Discord Avatar"
             >
 
             <span id="userName"></span>
@@ -50,13 +49,11 @@
             >
                 ออกจากระบบ
             </button>
-
         </div>
 
         <div id="currentTime" class="clock">
             00:00:00
         </div>
-
     </div>
 </header>
 
@@ -64,7 +61,6 @@
 <main>
 
     <section class="hero">
-
         <p class="label">
             MAVERICK BLACK SYSTEM
         </p>
@@ -76,14 +72,12 @@
         <p>
             บันทึกเวลาเข้าเวรและออกเวรอย่างเป็นระบบ
         </p>
-
     </section>
 
 
     <section class="duty-panel">
 
         <div class="input-group">
-
             <label>
                 ชื่อผู้ปฏิบัติงาน
             </label>
@@ -94,11 +88,9 @@
                 placeholder="กรอกชื่อของคุณ..."
                 autocomplete="off"
             >
-
         </div>
 
         <div class="buttons">
-
             <button
                 class="btn check-in"
                 onclick="checkIn()"
@@ -112,7 +104,6 @@
             >
                 🔴 ออกเวร
             </button>
-
         </div>
 
     </section>
@@ -153,7 +144,6 @@
     <section class="history">
 
         <div class="history-header">
-
             <div>
                 <p class="label">
                     DUTY HISTORY
@@ -171,19 +161,16 @@
             >
                 🗑 ล้างประวัติ
             </button>
-
         </div>
 
 
         <div class="search">
-
             <input
                 id="searchInput"
                 type="text"
                 placeholder="🔎 ค้นหาชื่อ..."
                 oninput="renderTable()"
             >
-
         </div>
 
 
@@ -220,7 +207,7 @@
 </main>
 
 
-<!-- MODAL ล้างประวัติ -->
+<!-- CLEAR MODAL -->
 
 <div id="clearModal" class="modal-overlay hidden">
 
@@ -239,12 +226,9 @@
             เพื่อยืนยันการล้างข้อมูลทั้งหมด
         </p>
 
-
         <div class="password-box">
 
-            <span>
-                🔑
-            </span>
+            <span>🔑</span>
 
             <input
                 id="clearPassword"
@@ -253,8 +237,8 @@
             >
 
             <button
-                type="button"
                 class="eye-btn"
+                type="button"
                 onclick="togglePassword()"
             >
                 👁
@@ -262,11 +246,9 @@
 
         </div>
 
-
         <div class="warning-box">
-            ⚠️ ข้อมูลจะถูกลบอย่างถาวร และไม่สามารถกู้คืนได้
+            ⚠️ ข้อมูลจะถูกลบถาวร และไม่สามารถกู้คืนได้
         </div>
-
 
         <div class="modal-actions">
 
@@ -297,8 +279,8 @@
 ></div>
 
 
-<script src="/js/app.js"></script>
-<link rel="stylesheet" href="./css/style.css">
+<!-- ใช้ relative path -->
+<script src="./js/app.js"></script>
 
 </body>
 </html>

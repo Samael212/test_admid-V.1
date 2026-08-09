@@ -39,9 +39,6 @@ body {
     display: none !important;
 }
 
-
-/* NAVBAR */
-
 .navbar {
     height: 75px;
 
@@ -80,9 +77,6 @@ body {
 
     font-weight: bold;
 }
-
-
-/* DISCORD */
 
 .discord-btn {
     padding: 10px 14px;
@@ -158,15 +152,6 @@ body {
     cursor: pointer;
 }
 
-.logout-btn:hover {
-    border-color: var(--gold);
-
-    color: white;
-}
-
-
-/* MAIN */
-
 main {
     max-width: 1200px;
 
@@ -175,9 +160,6 @@ main {
     padding:
         0 20px 80px;
 }
-
-
-/* HERO */
 
 .hero {
     padding:
@@ -210,9 +192,6 @@ main {
     color: #888;
 }
 
-
-/* DUTY PANEL */
-
 .duty-panel {
     max-width: 750px;
 
@@ -228,9 +207,6 @@ main {
         1px solid var(--border);
 
     border-radius: 16px;
-
-    box-shadow:
-        0 15px 60px rgba(0,0,0,.3);
 }
 
 .input-group {
@@ -259,24 +235,8 @@ main {
     outline: none;
 
     background: #080808;
-
     color: white;
-
-    transition: .2s;
 }
-
-.input-group input:focus,
-.search input:focus {
-    border-color:
-        var(--gold);
-
-    box-shadow:
-        0 0 0 3px
-        rgba(212,175,55,.08);
-}
-
-
-/* BUTTONS */
 
 .buttons {
     display: grid;
@@ -297,12 +257,6 @@ main {
     font-weight: bold;
 
     cursor: pointer;
-
-    transition: .2s;
-}
-
-.btn:hover {
-    transform: translateY(-2px);
 }
 
 .check-in {
@@ -318,9 +272,6 @@ main {
 
     color: white;
 }
-
-
-/* STATS */
 
 .stats {
     display: grid;
@@ -361,8 +312,6 @@ main {
         var(--panel2);
 
     border-radius: 10px;
-
-    font-size: 22px;
 }
 
 .stat-card p {
@@ -377,9 +326,6 @@ main {
 
     font-size: 25px;
 }
-
-
-/* HISTORY */
 
 .history {
     padding: 30px;
@@ -402,10 +348,6 @@ main {
     margin-bottom: 20px;
 }
 
-.history-header h2 {
-    margin-top: 6px;
-}
-
 .clear-btn {
     padding: 11px 15px;
 
@@ -419,24 +361,11 @@ main {
     color: #aaa;
 
     cursor: pointer;
-
-    transition: .2s;
-}
-
-.clear-btn:hover {
-    border-color:
-        var(--gold);
-
-    color:
-        var(--gold);
 }
 
 .search {
     margin-bottom: 20px;
 }
-
-
-/* TABLE */
 
 .table-container {
     width: 100%;
@@ -460,8 +389,6 @@ th {
     background: #171717;
 
     color: var(--gold);
-
-    font-size: 13px;
 }
 
 td {
@@ -515,18 +442,6 @@ td {
     cursor: pointer;
 }
 
-.delete-btn:hover {
-    background:
-        var(--red);
-
-    color: white;
-}
-
-
-/* =========================
-   CLEAR MODAL
-========================= */
-
 .modal-overlay {
     position: fixed;
 
@@ -542,15 +457,14 @@ td {
     padding: 20px;
 
     background:
-        rgba(0,0,0,.80);
+        rgba(0,0,0,.8);
 
     backdrop-filter:
-        blur(9px);
+        blur(8px);
 }
 
 .modal-card {
     width: 100%;
-
     max-width: 620px;
 
     padding: 35px;
@@ -563,37 +477,12 @@ td {
     background:
         radial-gradient(
             circle at top,
-            rgba(212,175,55,.10),
+            rgba(212,175,55,.1),
             transparent 40%
         ),
         #0c0c0c;
 
-    box-shadow:
-        0 0 50px rgba(212,175,55,.13),
-        0 25px 80px rgba(0,0,0,.65);
-
     text-align: center;
-
-    animation:
-        modalIn .25s ease;
-}
-
-@keyframes modalIn {
-    from {
-        opacity: 0;
-
-        transform:
-            scale(.94)
-            translateY(15px);
-    }
-
-    to {
-        opacity: 1;
-
-        transform:
-            scale(1)
-            translateY(0);
-    }
 }
 
 .modal-icon {
@@ -604,7 +493,6 @@ td {
         0 auto 18px;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
@@ -613,18 +501,7 @@ td {
 
     border-radius: 50%;
 
-    background:
-        radial-gradient(
-            circle,
-            rgba(212,175,55,.18),
-            rgba(212,175,55,.03)
-        );
-
     font-size: 42px;
-
-    box-shadow:
-        0 0 30px
-        rgba(212,175,55,.18);
 }
 
 .modal-card h2 {
@@ -643,10 +520,7 @@ td {
 }
 
 .password-box {
-    width: 100%;
-
     display: flex;
-
     align-items: center;
 
     gap: 12px;
@@ -665,29 +539,18 @@ td {
     margin-bottom: 20px;
 }
 
-.password-box span {
-    font-size: 22px;
-}
-
 .password-box input {
     flex: 1;
 
     height: 58px;
 
     border: none;
-
     outline: none;
 
     background:
         transparent;
 
     color: white;
-
-    font-size: 16px;
-}
-
-.password-box input::placeholder {
-    color: #666;
 }
 
 .eye-btn {
@@ -698,14 +561,7 @@ td {
 
     color: #aaa;
 
-    font-size: 20px;
-
     cursor: pointer;
-}
-
-.eye-btn:hover {
-    color:
-        var(--gold);
 }
 
 .warning-box {
@@ -722,8 +578,6 @@ td {
         rgba(220,38,38,.07);
 
     color: #ccc;
-
-    font-size: 14px;
 }
 
 .modal-actions {
@@ -741,13 +595,9 @@ td {
 
     border-radius: 10px;
 
-    font-size: 15px;
-
     font-weight: bold;
 
     cursor: pointer;
-
-    transition: .2s;
 }
 
 .modal-delete-btn {
@@ -763,15 +613,6 @@ td {
     color: #111;
 }
 
-.modal-delete-btn:hover {
-    transform:
-        translateY(-2px);
-
-    box-shadow:
-        0 8px 25px
-        rgba(212,175,55,.22);
-}
-
 .modal-cancel-btn {
     border:
         1px solid #444;
@@ -781,15 +622,6 @@ td {
 
     color: #bbb;
 }
-
-.modal-cancel-btn:hover {
-    color: white;
-
-    border-color: #666;
-}
-
-
-/* NOTIFICATION */
 
 .notification {
     position: fixed;
@@ -813,8 +645,6 @@ td {
 
     opacity: 0;
 
-    pointer-events: none;
-
     transition: .25s;
 }
 
@@ -824,9 +654,6 @@ td {
     transform:
         translate(-50%,0);
 }
-
-
-/* MOBILE */
 
 @media(max-width:750px) {
 
@@ -851,16 +678,6 @@ td {
     .buttons {
         grid-template-columns:
             1fr;
-    }
-
-    .modal-card {
-        padding:
-            25px 18px;
-    }
-
-    .modal-card h2 {
-        font-size:
-            24px;
     }
 
     .modal-actions {
